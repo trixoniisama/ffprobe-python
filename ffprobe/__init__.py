@@ -1,1 +1,1 @@
-from .ffprobe import FFProbe
+from .ffprobe import FFProbe, FFStream
