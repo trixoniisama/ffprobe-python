@@ -237,6 +237,12 @@ class FFStream:
         Returns language tag of stream. e.g. eng
         """
         return self.__dict__.get('TAG:language', None)
+    
+    def title(self):
+        """
+        Returns title tag of stream. e.g. English
+        """
+        return self.__dict__.get('TAG:title', None)
 
     def codec(self):
         """
