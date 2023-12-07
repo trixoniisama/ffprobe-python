@@ -270,3 +270,9 @@ class FFStream:
             return int(self.__dict__.get('bit_rate', ''))
         except ValueError:
             raise FFProbeError('None integer bit_rate')
+    
+    def channel(self):
+        """
+        Returns a string representation of the stream channel amount.
+        """
+        return self.__dict__.get('channels', None)
